@@ -1,8 +1,9 @@
 terraform {
-  required_providers {
-    aws = {
-      source = "hashicorp/aws"
-      version = "5.25.0"
+  cloud {
+    organization = "example-org-28b01e"
+
+    workspaces {
+      name = "file-storage-s3-cognito"
     }
   }
 }
