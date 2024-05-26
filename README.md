@@ -1,6 +1,8 @@
 ## Implementing Web Identify Federtation using Cognito and creating a image related CRUD app in S3
 
 ### Authenticated user will be able to view/upload/delete objects in S3. Users will be authenticated via Web Identity Federation using Cognito and Google Account.
+![image](https://github.com/devopsexercise1979/file-storage-s3-cognito/assets/109491325/14d1790a-948a-490c-bea1-3973ce47c046)
+
 
 #### Steps -
 
