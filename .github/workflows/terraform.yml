@@ -60,6 +60,7 @@ jobs:
     defaults:
       run:
         shell: bash
+        working-directory: ./tf-aws-infra
 
     steps:
     # Checkout the repository to the GitHub Actions runner
@@ -79,10 +80,6 @@ jobs:
       with:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
-    - name: Change directory and run commands
-      run: |
-        echo "Running commands in /tf directory"
-      working-directory: ./tf-aws-infra
       
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
