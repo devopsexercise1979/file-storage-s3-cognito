@@ -82,7 +82,7 @@ jobs:
     - name: Change directory and run commands
       run: |
         echo "Running commands in /tf directory"
-      working-directory: /tf-aws-infra
+      working-directory: ./tf-aws-infra
       
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
